@@ -1,1 +1,3 @@
-# dhwani-html-project
+# Ignore this repo, practicing git commands
+
+Ignore
