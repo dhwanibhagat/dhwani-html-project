@@ -1,3 +1,3 @@
-# Ignore this repo, practicing git commands
+# Ignore this repo, practicing git 
 
-Ignore
+practicing GIT 
