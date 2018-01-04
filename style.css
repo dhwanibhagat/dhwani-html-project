@@ -9,3 +9,18 @@
 	background-color:red;
 	margin:50px;
 }
+
+.font-color-yellow{
+	color: yellow;
+	background-color: green;
+}
+.font-color-green{
+	color:green;
+	background-color: yellow;
+}
+
+.panel-title-color{
+	color:white;
+	background-color: black;
+	margin: 12px 12px 12px 12px;
+}
