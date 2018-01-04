@@ -1,3 +1,11 @@
 .color-bg{
     background-color: aqua;
 }
+
+.font-attributes{
+	padding: 50px;
+	margin:auto;
+	color:green;
+	background-color:red;
+	margin:50px;
+}
