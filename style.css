@@ -1,6 +1,10 @@
 .color-bg{
-    background-color: aqua;
+	background-color: aqua;
+	padding: 5em;
+	margin: 5em;
 }
+
+
 
 .font-attributes{
 	padding: 50px;
@@ -8,4 +12,19 @@
 	color:yellow;
 	background-color:red;
 	margin:50px;
+}
+
+.font-color-yellow{
+	color: yellow;
+	background-color: black;
+}
+.font-color-green{
+	color:green;
+	background-color: black;
+}
+
+.panel-title-color{
+	color:white;
+	background-color: black;
+	margin: 12px 12px 12px 12px;
 }
