@@ -1,6 +1,5 @@
 <?php
     include 'connection.php';
-    include 'JSONClass.php';
 
     $mysqli = mysqli_connect($databaseHost,$databaseUsername,$databasePassword,$databaseName);
     $query = "select * from admins";
@@ -9,11 +8,9 @@
     while($addrow = mysqli_fetch_assoc($result)){
         $rows[] = $addrow;
     }
-    $JSONNotationObject = new JSONClass;
-    echo  $JSONNotationObject->returnJSONData($rows);
+    $json_data = json_encode($rows,JSON_PRETTY_PRINT);
 
+    $json_file = fopen('index.json','w');
+    fwrite($json_file,$json_data);
 
-//    $json_file = fopen('index.json','w');
-//    fwrite($json_file,$json_data);
-
-//    echo $json_data;
+    echo $json_data;
