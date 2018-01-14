@@ -12,3 +12,5 @@
 
     $json_file = fopen('index.json','w');
     fwrite($json_file,$json_data);
+
+    echo $json_data;
