@@ -18,7 +18,7 @@
         function databaseConnection($databaseHost,$databaseUsername,$databasePassword,$databaseName){
             try{
                 $this->connection = new PDO("mysql:host=$databaseHost;dbname=$databaseName;", $databaseUsername, $databasePassword);
-                $this->$connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+                $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 if($this->connection){
                     return $this->connection;
                 }
@@ -40,7 +40,7 @@
             try{ 
                 $result = $this->connection->prepare("SELECT * FROM admins");
                 $result->execute();
-                $rows = $result->fetch(PDO::FETCH_NUM);
+                $rows = $result->fetchAll();
                 return $rows;
             }
             catch(Exception $e){

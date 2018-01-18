@@ -3,7 +3,5 @@
 
   $User = new UserActions;
   print_r($User->databaseConnection('localhost','root','','admission2018'));
-
-  echo $User->debugging();
-
+  print_r ($User->userLogin('ll@ll.com','random'));
   
