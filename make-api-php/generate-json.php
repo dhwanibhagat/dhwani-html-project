@@ -1,12 +1,11 @@
 <?php
-
-
-    /**
+     /**
      * Generate JSON Class
      * Handles all operations with generating and storing JSON File
      */
 
     class GenerateJSON{
+        
         /**
          * @author Yash Karanke
          * Takes three parameters
@@ -15,6 +14,7 @@
          * 3 output filename
          * the output filename must end with .json
          */
+
         function createJSON($databaseName,$tableName,$fileName){
             $databaseHost = "localhost";
             $databaseUsername = "root";
