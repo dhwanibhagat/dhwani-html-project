@@ -1,8 +1,12 @@
 <?php
-    $str = file_get_contents('index.json');
+    $str = file_get_contents('courses.json');
     $json_data = json_decode($str,true);
 
-    foreach($json_data as $value){
-        echo '<br>'.$value['email'];
+    for ($i=0; $i < 3; $i++) {
+        if ($json_data[$i]['isActive']!=0 && $json_data[$i]['isActive']!=null) {
+            echo '<br>'. $json_data[$i]['ID'] .' '.$json_data[$i]['coursename'];
+        }
+        elseif ($json_data[$i]['isActive']==0 && $json_data[$i]['isActive']==null) {
+            echo '<br>'.$json_data[$i]['ID'].' This course is not yet active';
+        }
     }
-    echo '<br>'.$value['email'];

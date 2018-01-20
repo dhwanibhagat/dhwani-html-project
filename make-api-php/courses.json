@@ -1,0 +1,17 @@
+[
+    {
+        "ID": "29",
+        "coursename": "MCA",
+        "isActive": 1
+    },
+    {
+        "ID": "31",
+        "coursename": "MCQ",
+        "isActive": 1
+    },
+    {   
+        "ID": "32",
+        "coursename": "MBA",
+        "isActive": null
+    }
+]
